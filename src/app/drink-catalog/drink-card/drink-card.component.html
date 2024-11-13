@@ -1,2 +1,7 @@
 <p>drink-card works!</p>
-<p>`{{data}}`</p>
+<div class="container card" *ngFor="let drink of drinkData">
+    <img [src]="drink.imageUrl">
+    <p>Name: `{{drink.name}}`</p>
+    <p>Alcoholic: `{{drink.isAlcoholic}}`</p>
+    <p>Ingredients: `{{drink.ingredients}}`</p>
+</div>

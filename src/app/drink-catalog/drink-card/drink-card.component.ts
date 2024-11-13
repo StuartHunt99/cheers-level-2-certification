@@ -1,25 +1,14 @@
-import { Component, inject, Signal } from '@angular/core';
-import { DrinkService } from '../../../services/drink.service';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';  
 import { Drink } from '../../../models/drink.model';
 
 @Component({
   selector: 'app-drink-card',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './drink-card.component.html',
   styleUrl: './drink-card.component.scss'
 })
 export class DrinkCardComponent {
-
-protected drinkService = inject (DrinkService);
-protected data!: Signal<Drink[]>;
-
-constructor() {
-  this.getData();
-}
-
-getData(){
-  this.data = this.drinkService.getDrinks();
-}
-
+@Input() drinkData: Drink[] = [];
 }
