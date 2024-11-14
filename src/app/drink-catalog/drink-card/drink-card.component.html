@@ -1,5 +1,5 @@
 <div class="card-container">
-    <img [src]="drink.imageUrl" class="card-image"/>
+    <img [src]="drink.imageUrl" class="card-image" [alt]="drink.name" [title]="drink.imageUrl"/>
     <div class="card-content">
         <div class="card-header">
             <h1 class="card-name">{{drink.name}}</h1>
@@ -8,5 +8,4 @@
         </div>
     </div>   
     <span class="icon-star"></span>
-
 </div>

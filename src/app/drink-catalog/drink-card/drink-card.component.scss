@@ -1,38 +1,33 @@
-/* Container for the entire card */
 .card-container {
     display: flex;
-    flex-direction: row; /* Places the image and content side by side */
+    flex-direction: row;
     border: 1px solid #000;
     border-radius: 20px;
     overflow: hidden;
     background-color: #fff;
-    height: 200px; /* Ensures the container takes up full available height */
+    height: 200px; 
   }
   
-  /* Image container takes up 40% of the width */
   .card-image{
     display: flex;
-    flex: 0 0 40%; /* Fixed width of 40% of the card */
+    flex: 0 0 40%; 
     overflow: hidden;
   }
   
 
   
-  /* Content container takes up 60% of the width */
   .card-content {
-    flex: 1; /* Fills the remaining space (60%) */
+    flex: 1; 
     padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: top;
   }
   
-  /* Header styling inside card content */
   .card-header {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the start, preventing full-width */
-}
+    align-items: flex-start; 
 
 .is-alcoholic {
     border-radius: 20px;
@@ -40,7 +35,7 @@
     text-align: left;
     color: white;
     padding: 2px 5px;
-    align-self: flex-start; /* Ensures it aligns to the start of the header */
+    align-self: flex-start; 
 }
 
 
