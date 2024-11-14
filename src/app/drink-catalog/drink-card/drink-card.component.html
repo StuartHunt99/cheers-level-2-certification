@@ -1,10 +1,11 @@
 <div class="card-container">
-    <img [src]="drink.imageUrl" class="card-image" [alt]="drink.name" [title]="drink.imageUrl"/>
+    <img [src]="drink.imageUrl" class="card-image" alt="{{drink.name}}"/>
     <div class="card-content">
         <div class="card-header">
             <h1 class="card-name">{{drink.name}}</h1>
-            <p class="is-alcoholic">Alcoholic: `{{drink.isAlcoholic}}`</p>
-            <p>Ingredients: `{{drink.ingredients}}`</p>
+            <p class="is-alcoholic" *ngIf="drink.isAlcoholic">Alcoholic</p>
+            <p class="non-alcoholic" *ngIf="!drink.isAlcoholic">Non-Alcoholic</p>
+            <p> {{drink.ingredients | formatSeparator}}</p>
         </div>
     </div>   
     <span class="icon-star"></span>
