@@ -1,6 +1,12 @@
-    <div class="drink-image" ><img [src]="drink.imageUrl"></div>
-    <div class="drink-details">
-        <h1>{{drink.name}}</h1>
-        <p>Alcoholic: `{{drink.isAlcoholic}}`</p>
-        <p>Ingredients: `{{drink.ingredients}}`</p>
+<div class="card-container">
+    <div class="card-image-container" >
+        <img [src]="drink.imageUrl" class="card-image"/>
     </div>
+    <div class="card-content">
+        <div class="card-header">
+            <h1 class="card-name">{{drink.name}}</h1>
+            <p>Alcoholic: `{{drink.isAlcoholic}}`</p>
+            <p>Ingredients: `{{drink.ingredients}}`</p>
+        </div>
+    </div>   
+</div>

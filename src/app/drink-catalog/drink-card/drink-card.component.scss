@@ -1,4 +1,42 @@
-.card {
+/* Container for the entire card */
+.card-container {
+    display: flex;
+    flex-direction: row; /* Places the image and content side by side */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    height: 100%; /* Ensures the container takes up full available height */
+  }
+  
+  /* Image container takes up 40% of the width */
+  .card-image-container {
+    flex: 0 0 40%; /* Fixed width of 40% of the card */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* Image styling */
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container without stretching */
+  }
+  
+  /* Content container takes up 60% of the width */
+  .card-content {
+    flex: 1; /* Fills the remaining space (60%) */
+    padding: 16px;
     display: flex;
     flex-direction: column;
-}
+    justify-content: center;
+  }
+  
+  /* Header styling inside card content */
+  .card-header {
+    display: flex;
+    flex-direction: column;
+  }
+  
