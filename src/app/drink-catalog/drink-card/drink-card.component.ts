@@ -10,5 +10,5 @@ import { Drink } from '../../../models/drink.model';
   styleUrl: './drink-card.component.scss'
 })
 export class DrinkCardComponent {
-@Input() drinkData: Drink[] = [];
+@Input() drink: Drink;
 }

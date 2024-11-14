@@ -1,3 +1,4 @@
 <p>catalog works!</p>
-<app-drink-card [drinkData]="data()"></app-drink-card>
-
+<div class="container" *ngFor="let drink of data()">
+<app-drink-card [drink]="drink"></app-drink-card>
+</div>
