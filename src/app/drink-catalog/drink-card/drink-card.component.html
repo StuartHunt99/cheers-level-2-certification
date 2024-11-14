@@ -1,12 +1,12 @@
 <div class="card-container">
-    <div class="card-image-container" >
-        <img [src]="drink.imageUrl" class="card-image"/>
-    </div>
+    <img [src]="drink.imageUrl" class="card-image"/>
     <div class="card-content">
         <div class="card-header">
             <h1 class="card-name">{{drink.name}}</h1>
-            <p>Alcoholic: `{{drink.isAlcoholic}}`</p>
+            <p class="is-alcoholic">Alcoholic: `{{drink.isAlcoholic}}`</p>
             <p>Ingredients: `{{drink.ingredients}}`</p>
         </div>
     </div>   
+    <span class="icon-star"></span>
+
 </div>

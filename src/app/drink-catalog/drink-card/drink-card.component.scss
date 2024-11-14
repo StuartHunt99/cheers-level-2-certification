@@ -2,28 +2,21 @@
 .card-container {
     display: flex;
     flex-direction: row; /* Places the image and content side by side */
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border: 1px solid #000;
+    border-radius: 20px;
     overflow: hidden;
     background-color: #fff;
-    height: 100%; /* Ensures the container takes up full available height */
+    height: 200px; /* Ensures the container takes up full available height */
   }
   
   /* Image container takes up 40% of the width */
-  .card-image-container {
-    flex: 0 0 40%; /* Fixed width of 40% of the card */
+  .card-image{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex: 0 0 40%; /* Fixed width of 40% of the card */
     overflow: hidden;
   }
   
-  /* Image styling */
-  .card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire container without stretching */
-  }
+
   
   /* Content container takes up 60% of the width */
   .card-content {
@@ -31,12 +24,26 @@
     padding: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
   }
   
   /* Header styling inside card content */
   .card-header {
     display: flex;
     flex-direction: column;
-  }
-  
+    align-items: flex-start; /* Align items to the start, preventing full-width */
+}
+
+.is-alcoholic {
+    border-radius: 20px;
+    background-color: #705;
+    text-align: left;
+    color: white;
+    padding: 2px 5px;
+    align-self: flex-start; /* Ensures it aligns to the start of the header */
+}
+
+
+    .icon-star{
+    margin: 16px;
+    }
