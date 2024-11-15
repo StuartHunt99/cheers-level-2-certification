@@ -6,3 +6,7 @@ export interface Drink {
     ingredients: string[];
     instructions: string;
 }
+
+export type DrinkId = Drink["id"];
+
+export type DrinkIds = Array<Drink["id"]>;
