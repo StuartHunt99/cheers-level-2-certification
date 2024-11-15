@@ -1,0 +1,7 @@
+<h5>Filters</h5>
+<label for="searchBox">Cocktail name</label>
+<input type="text" 
+id="searchBox"
+aria-label="Search for drink"
+[(ngModel)]="text" 
+(ngModelChange)="onInputChange($event)" />

@@ -1,3 +1,8 @@
+<app-search-box (textChange)="onTextChanged($event)"></app-search-box>
 <div class="card-grid">
-    <app-drink-card  *ngFor="let drink of data()" [drink]="drink"></app-drink-card>
+    @for (drink of data(); track drink.id) {
+        @if (drink.name.toLowerCase().startsWith(filter.toLowerCase())) {
+            <app-drink-card [drink]="drink"></app-drink-card>
+        }
+    }
 </div>
