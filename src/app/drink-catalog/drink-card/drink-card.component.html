@@ -3,8 +3,9 @@
     <div class="card-content">
         <div class="card-header">
             <h1 class="card-name">{{drink.name}}</h1>
-            <p class="is-alcoholic" *ngIf="drink.isAlcoholic">Alcoholic</p>
-            <p class="non-alcoholic" *ngIf="!drink.isAlcoholic">Non-Alcoholic</p>
+            <p [class]="drink.isAlcoholic ? 'is-alcoholic' : 'non-alcoholic'">
+                {{drink.isAlcoholic ? 'Alcoholic' : 'Non-Alcoholic'}}
+            </p>
             <p> {{drink.ingredients | formatSeparator}}</p>
         </div>
     </div>   
