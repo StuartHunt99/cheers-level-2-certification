@@ -16,6 +16,8 @@ export class FavoritesService {
     effect(() => this.localStorage.set(this.FAVORITES_KEY, this.favoritesSignal()));
   }
 
+  //SIMPLER APPROACH BUT SLOWER SINCE FILTER ITERATES OVER THE ORIGINAL ARRAY AND CREATES A REPLACEMENT
+  
   toggleFavorite(drinkId: DrinkId): void {
     this.favoritesSignal.update(favorites =>
     favorites.includes(drinkId) 
