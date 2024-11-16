@@ -9,5 +9,5 @@
             <p> {{drink.ingredients | formatSeparator}}</p>
         </div>
     </div>   
-    <span class="icon-star"></span>
+    <span class="icon-star" [appToggleFavorite]="drink.id"></span>
 </div>

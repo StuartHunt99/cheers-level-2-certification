@@ -27,7 +27,6 @@ export class DrinkCatalogComponent {
 
   onTextChanged(newText: string){
    this.filter = newText;
-   console.log('filter:', newText)
   }
   
 }

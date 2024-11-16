@@ -24,6 +24,7 @@ export class FavoritesService {
       ? favorites.filter(favoriteId => favoriteId !== drinkId)
       : [...favorites, drinkId]
     );
+    console.log(this.favoritesSignal())
   }
 
 //  ANOTHER OPTION FOR THIS METHOD.  BETTER PERFORMANCE AT THE EXPENSE OF READABILITY;
