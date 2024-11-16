@@ -32,7 +32,7 @@ export class DrinkService {
   }
 
   getDrinkDetails(drinkId: DrinkId): Signal<Drink> {
-    this.http.get<Drink>(`${API_URL}?q=${drinkId}`).subscribe(data => {
+    this.http.get<Drink>(`${API_URL}/${drinkId}`).subscribe(data => {
       this.drinkDetailsResult.set(data);
     });
     return this.drinkDetailsResult.asReadonly();

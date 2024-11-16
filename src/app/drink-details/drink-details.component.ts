@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, Signal } from '@angular/core';
+import { Drink } from '../../models/drink.model';
 
 @Component({
   selector: 'app-drink-details',
@@ -9,4 +10,6 @@ import { Component } from '@angular/core';
 })
 export class DrinkDetailsComponent {
 
+  @Input() drink!: Signal<Drink>;
 }
+
