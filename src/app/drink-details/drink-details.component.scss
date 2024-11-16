@@ -1,0 +1,66 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #000;
+    background-color: #fff;
+    height: 400px; 
+    }
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    }
+
+.title-group{
+    display: flex;
+    flex-direction: row;
+}
+
+.ingredients-group  {
+    display: flex;
+    flex-direction: row;
+}
+
+.instructions-group  {
+    display: flex;
+    flex-direction: row;
+}
+
+    .card-image{
+    overflow: hidden;
+    }
+    
+.card-content {
+flex: 1; 
+padding: 16px;
+display: flex;
+flex-direction: column;
+justify-content: top;
+}
+    
+   
+    
+.is-alcoholic {
+border-radius: 20px;
+background-color: #705;
+text-align: left;
+color: white;
+padding: 2px 10px;
+align-self: flex-start;
+}
+
+.non-alcoholic {
+    border-radius: 20px;
+    background-color: rgb(127, 196, 148);
+    text-align: left;
+    color: white;
+    padding: 2px 10px;
+    align-self: flex-start; 
+    }
+
+.icon-star {
+padding: 8px;
+margin-right: 16px;
+margin-top: 16px;
+}

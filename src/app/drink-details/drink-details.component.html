@@ -1,4 +1,27 @@
 @if (drink(); as drink) {
-<p>drink-details works!</p>
-<p>Name:{{drink.name}}</p>
+    <div class="card-container">
+        <img [src]="drink.imageUrl" class="card-image" alt="{{drink.name}}"/>
+        <div class="card-content">
+            <div class="card-header">
+                <h1 class="card-name">{{drink.name}}</h1>
+                <span class="icon-star" [appToggleFavorite]="drink.id"></span>
+            </div>
+            <div class="card-details">   
+                <div class="title-group">
+                    <h4>Type:</h4>
+                    <p [class]="drink.isAlcoholic ? 'is-alcoholic' : 'non-alcoholic'">
+                        {{drink.isAlcoholic ? 'Alcoholic' : 'Non-Alcoholic'}}
+                    </p>
+                </div>
+                <div class="ingredients-group">
+                    <h4>Ingredients:</h4>
+                    <p> {{drink.ingredients | formatSeparator}}</p>
+                </div>
+                <div class="instructions-group">
+                    <h4>Instructions:</h4>
+                    <p> {{drink.instructions}} </p>
+                </div>
+            </div>
+        </div>
+    </div>           
 }
