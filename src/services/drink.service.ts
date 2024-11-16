@@ -1,30 +1,41 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, Signal, signal } from '@angular/core';
-import { Drink } from '../models/drink.model';
+import { Drink, DrinkId } from '../models/drink.model';
 import {API_URL} from "../app/app.constants";
+import { Observable, map } from 'rxjs';
 
-const INIT_DATA = [{
+const INIT_DATA = {
 id: "",
 name: "",
 isAlcoholic:  true,
 imageUrl: "",
 ingredients: [""],
 instructions: "",
-}]
+}
 
 @Injectable({
   providedIn: 'root'
 })
 export class DrinkService {
 
-  private drinkResult = signal<Drink[]>(INIT_DATA)
+  private drinksResult = signal<Drink[]>([INIT_DATA])
+  private drinkDetailsResult = signal<Drink>(INIT_DATA)
+
 
   constructor(private readonly http: HttpClient) { }
 
   getDrinks(): Signal<Drink[]>{    
     this.http.get<Drink[]>(API_URL).subscribe(data => {
-      this.drinkResult.set(data);
+      this.drinksResult.set(data);
     });
-    return this.drinkResult.asReadonly();
+    return this.drinksResult.asReadonly();
   }
+
+  getDrinkDetails(drinkId: DrinkId): Signal<Drink> {
+    this.http.get<Drink>(`${API_URL}?q=${drinkId}`).subscribe(data => {
+      this.drinkDetailsResult.set(data);
+    });
+    return this.drinkDetailsResult.asReadonly();
+  }
+
 }
