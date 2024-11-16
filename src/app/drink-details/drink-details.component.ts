@@ -11,5 +11,6 @@ import { Drink } from '../../models/drink.model';
 export class DrinkDetailsComponent {
 
   @Input() drink!: Signal<Drink>;
+
 }
 
