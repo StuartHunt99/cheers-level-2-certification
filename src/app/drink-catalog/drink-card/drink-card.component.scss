@@ -28,6 +28,12 @@ flex-direction: column;
 align-items: flex-start; 
 }
 
+.card-header a {
+    font-size: 2em;
+    color: inherit;
+    text-decoration-thickness: 2px;
+}
+
 .is-alcoholic {
 border-radius: 20px;
 background-color: #705;

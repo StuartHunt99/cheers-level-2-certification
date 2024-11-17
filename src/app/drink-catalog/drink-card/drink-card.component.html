@@ -2,7 +2,7 @@
     <img [src]="drink.imageUrl" class="card-image" alt="{{drink.name}}"/>
     <div class="card-content">
         <div class="card-header">
-            <h1 class="card-name">{{drink.name}}</h1>
+            <a href="#" class="card-name" routerLink="/drink/{{drink.id}}">{{drink.name}}</a>
             <p [class]="drink.isAlcoholic ? 'is-alcoholic' : 'non-alcoholic'">
                 {{drink.isAlcoholic ? 'Alcoholic' : 'Non-Alcoholic'}}
             </p>
