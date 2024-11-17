@@ -1,66 +1,66 @@
 .card-container {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid #000;
-    background-color: #fff;
-    height: 400px; 
-    }
-
-.card-header {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start; 
-    }
-
-.title-group{
-    display: flex;
-    flex-direction: row;
+display: flex;
+flex-direction: row;
+border: 1px solid #000;
+background-color: #fff;
+height: 400px; 
+width: 1000px;
+margin: 0 auto; 
 }
 
-.ingredients-group  {
+.title-group, .ingredients-group, .instructions-group, .card-header {
     display: flex;
     flex-direction: row;
+    align-items: baseline; 
 }
 
-.instructions-group  {
-    display: flex;
-    flex-direction: row;
-}
 
-    .card-image{
-    overflow: hidden;
-    }
+.title-group h4, .ingredients-group h4, .instructions-group h4 {
+    width: 100px;
+    margin: 30px; 
+    text-align: left;
     
+}
+
+.card-name{
+    width: 100px;
+    margin: 10px 0px 30px 30px; 
+    text-align: left;  
+}
+
+
+.card-image{
+overflow: hidden;
+}
+
 .card-content {
 flex: 1; 
 padding: 16px;
 display: flex;
 flex-direction: column;
 justify-content: top;
+width: 80px;
+margin: 0 auto; 
 }
-    
-   
-    
-.is-alcoholic {
+
+
+
+.is-alcoholic, .non-alcoholic {
 border-radius: 20px;
 background-color: #705;
 text-align: left;
 color: white;
 padding: 2px 10px;
-align-self: flex-start;
+align-items: baseline; 
+margin: 0;
 }
 
 .non-alcoholic {
-    border-radius: 20px;
-    background-color: rgb(127, 196, 148);
-    text-align: left;
-    color: white;
-    padding: 2px 10px;
-    align-self: flex-start; 
-    }
+background-color: rgb(127, 196, 148);
+}
 
 .icon-star {
 padding: 8px;
-margin-right: 16px;
+margin-right: 12px;
 margin-top: 16px;
 }
