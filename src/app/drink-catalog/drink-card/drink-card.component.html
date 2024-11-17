@@ -6,7 +6,7 @@
             <p [class]="drink.isAlcoholic ? 'is-alcoholic' : 'non-alcoholic'">
                 {{drink.isAlcoholic ? 'Alcoholic' : 'Non-Alcoholic'}}
             </p>
-            <p> {{drink.ingredients | formatSeparator}}</p>
+            <p> {{drink.ingredients | pipelineSeparator}}</p>
         </div>
     </div>   
     <span class="icon-star" [appToggleFavorite]="drink.id"></span>

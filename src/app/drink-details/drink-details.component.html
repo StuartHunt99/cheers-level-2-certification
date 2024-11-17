@@ -15,7 +15,9 @@
                 </div>
                 <div class="ingredients-group">
                     <h4>Ingredients:</h4>
-                    <p> {{drink.ingredients | formatSeparator}}</p>
+                    <ul>                        
+                        @for (ingredient of drink.ingredients; track ingredient.indexOf; let idx = $index) {<li> {{drink.ingredients[idx]}}</li>}
+                    </ul>
                 </div>
                 <div class="instructions-group">
                     <h4>Instructions:</h4>

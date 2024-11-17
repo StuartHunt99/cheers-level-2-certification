@@ -1,10 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'formatSeparator',
+  name: 'pipelineSeparator',
   standalone: true
 })
-export class FormatSeparatorPipe implements PipeTransform {
+export class PipelineSeparatorPipe implements PipeTransform {
 
   transform(value: string[]): string {
     return value.join(' | ');

@@ -1,8 +1,6 @@
 .card-container {
 display: flex;
 flex-direction: row;
-border: 1px solid #000;
-background-color: #fff;
 height: 400px; 
 width: 1000px;
 margin: 0 auto; 
@@ -13,7 +11,6 @@ margin: 0 auto;
     flex-direction: row;
     align-items: baseline; 
 }
-
 
 .title-group h4, .ingredients-group h4, .instructions-group h4 {
     width: 100px;
@@ -28,7 +25,6 @@ margin: 0 auto;
     text-align: left;  
 }
 
-
 .card-image{
 overflow: hidden;
 }
@@ -42,8 +38,6 @@ justify-content: top;
 width: 80px;
 margin: 0 auto; 
 }
-
-
 
 .is-alcoholic, .non-alcoholic {
 border-radius: 20px;
