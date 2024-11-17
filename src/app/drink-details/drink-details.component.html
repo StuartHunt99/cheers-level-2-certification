@@ -1,3 +1,11 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="back-container" routerLink="">    
+    <div class="back-content">
+        <span class="material-icons">home</span>
+        <h4 class="back-text">Back</h4>
+    </div>
+</div>
 @if (drink(); as drink) {
     <div class="card-container">
         <img [src]="drink.imageUrl" class="card-image" alt="{{drink.name}}"/>

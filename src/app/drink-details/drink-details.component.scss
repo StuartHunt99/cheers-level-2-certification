@@ -60,3 +60,39 @@ padding: 8px;
 margin-right: 12px;
 margin-top: 16px;
 }
+
+.back-container {
+    justify-content: center;
+    width: 100px; 
+    background-color: #e6e6e6;
+    cursor: pointer; 
+    margin-bottom: 20px; 
+    margin-left: calc((100% - 1000px) / 2); 
+}
+
+.back-container:hover {
+    background-color: #c9c9c9; 
+}
+
+.back-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-text {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 400;
+    align-items: baseline;
+
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
