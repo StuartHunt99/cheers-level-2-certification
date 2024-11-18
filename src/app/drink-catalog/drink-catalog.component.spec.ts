@@ -1,18 +1,24 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing'; 
+import { DrinkCatalogComponent } from './drink-catalog.component';
+import { provideRouter, withEnabledBlockingInitialNavigation } from '@angular/router';
 
-import { CatalogComponent } from './drink-catalog.component';
-
-describe('CatalogComponent', () => {
-  let component: CatalogComponent;
-  let fixture: ComponentFixture<CatalogComponent>;
+describe('DrinkCatalogComponent', () => {
+  let component: DrinkCatalogComponent;
+  let fixture: ComponentFixture<DrinkCatalogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CatalogComponent]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(CatalogComponent);
+      imports: [
+        DrinkCatalogComponent, 
+        HttpClientTestingModule, 
+      ],
+      providers: [
+        provideRouter([], withEnabledBlockingInitialNavigation()) 
+      ]
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(DrinkCatalogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

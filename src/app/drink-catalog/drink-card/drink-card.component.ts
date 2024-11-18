@@ -13,5 +13,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './drink-card.component.scss'
 })
 export class DrinkCardComponent {
-@Input() drink: Drink;
+@Input() drink!: Drink;
 }

@@ -23,8 +23,8 @@
                 </div>
                 <div class="ingredients-group">
                     <h4>Ingredients:</h4>
-                    <ul>                        
-                        @for (ingredient of drink.ingredients; track ingredient.indexOf; let idx = $index) {<li> {{drink.ingredients[idx]}}</li>}
+                    <ul>
+                        @for (ingredient of drink.ingredients; let idx = $index; track idx ) {<li> {{drink.ingredients[idx]}}</li>}
                     </ul>
                 </div>
                 <div class="instructions-group">

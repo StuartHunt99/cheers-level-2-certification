@@ -7,9 +7,13 @@ import { DrinkId, DrinkIds } from '../models/drink.model';
 })
 export class FavoritesService {
 
-  private readonly FAVORITES_KEY = "favorites";
-  private readonly localStorage = inject(LocalStorageService<DrinkIds>);
-  private readonly favoritesSignal = signal<DrinkIds>(this.localStorage.get(this.FAVORITES_KEY));
+  private readonly FAVORITES_KEY: string = "favorites";
+  private readonly localStorage: LocalStorageService<DrinkIds> = inject(LocalStorageService<DrinkIds>);
+  
+  private readonly favoritesSignal = signal<DrinkIds>(
+  this.localStorage.get(this.FAVORITES_KEY) ?? []
+  );
+  
   favorites = this.favoritesSignal.asReadonly();
 
   constructor() { 

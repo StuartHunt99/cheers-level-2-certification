@@ -1,1 +1,1 @@
-export const API_URL = '/cocktails';
+export const API_URL: string = '/cocktails';
