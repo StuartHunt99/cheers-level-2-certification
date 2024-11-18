@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ToggleFavoriteDirective } from './toggle-favorite.directive';
-import { FavoritesService } from './favorites.service';
+import { FavoritesService } from '../services/favorites.service';
 import { By } from '@angular/platform-browser';
 
 @Component({

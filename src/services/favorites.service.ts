@@ -1,5 +1,5 @@
 import { effect, inject, Injectable, signal } from '@angular/core';
-import { LocalStorageService } from './local-storage.service';
+import { LocalStorageService } from '../app/local-storage.service';
 import { DrinkId, DrinkIds } from '../models/drink.model';
 
 @Injectable({

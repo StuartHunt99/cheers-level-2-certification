@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, Signal, signal } from '@angular/core';
 import { Drink, DrinkId } from '../models/drink.model';
 import {API_URL} from "../app/app.constants";
-import { Observable, map } from 'rxjs';
 
 const INIT_DATA = {
 id: "",
@@ -18,8 +17,8 @@ instructions: "",
 })
 export class DrinkService {
 
-  private drinksResult = signal<Drink[]>([INIT_DATA])
-  private drinkDetailsResult = signal<Drink>(INIT_DATA)
+  private readonly drinksResult = signal<Drink[]>([INIT_DATA])
+  private readonly drinkDetailsResult = signal<Drink>(INIT_DATA)
 
 
   constructor(private readonly http: HttpClient) { }
