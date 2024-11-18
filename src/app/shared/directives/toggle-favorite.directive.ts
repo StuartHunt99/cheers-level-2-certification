@@ -1,5 +1,5 @@
 import { Directive, HostBinding, HostListener, inject, Input } from '@angular/core';
-import { FavoritesService } from '../services/favorites.service';
+import { FavoritesService } from '../../services/favorites.service';
 import { DrinkId } from '../models/drink.model';
 
 @Directive({

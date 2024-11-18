@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, Signal, signal } from '@angular/core';
-import { Drink, DrinkId } from '../models/drink.model';
-import {API_URL} from "../app/app.constants";
+import { Drink, DrinkId } from '../shared/models/drink.model';
+import {API_URL} from "../app.constants";
 
 const INIT_DATA = {
 id: "",

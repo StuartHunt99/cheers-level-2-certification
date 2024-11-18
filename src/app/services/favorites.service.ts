@@ -1,6 +1,6 @@
 import { effect, inject, Injectable, signal } from '@angular/core';
-import { LocalStorageService } from '../app/local-storage.service';
-import { DrinkId, DrinkIds } from '../models/drink.model';
+import { LocalStorageService } from './local-storage.service';
+import { DrinkId, DrinkIds } from '../shared/models/drink.model';
 
 @Injectable({
   providedIn: 'root'

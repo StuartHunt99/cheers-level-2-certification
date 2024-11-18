@@ -1,6 +1,6 @@
 import {inject, Signal} from '@angular/core';
 import {ActivatedRouteSnapshot} from '@angular/router';
-import { Drink, DrinkId } from '../../models/drink.model';
+import { Drink, DrinkId } from '../../shared/models/drink.model';
 import { DrinkService } from '../../services/drink.service';
 
 

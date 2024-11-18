@@ -1,7 +1,7 @@
 import { Component, Input, Signal } from '@angular/core';
-import { Drink } from '../../models/drink.model';
+import { Drink } from '../../shared/models/drink.model';
 import { CommonModule } from '@angular/common';
-import { ToggleFavoriteDirective } from '../toggle-favorite.directive';
+import { ToggleFavoriteDirective } from '../../shared/directives/toggle-favorite.directive';
 import { RouterModule } from '@angular/router';
 
 @Component({

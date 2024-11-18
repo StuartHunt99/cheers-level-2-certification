@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { FavoritesService } from './favorites.service';
-import { LocalStorageService } from '../app/local-storage.service';
-import { DrinkId } from '../models/drink.model';
+import { LocalStorageService } from './local-storage.service';
+import { DrinkId } from '../shared/models/drink.model';
 
 describe('FavoritesService', () => {
   let service: FavoritesService;

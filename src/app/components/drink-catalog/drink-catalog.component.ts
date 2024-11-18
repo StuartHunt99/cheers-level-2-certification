@@ -1,7 +1,7 @@
 import { Component, inject, Signal } from '@angular/core';
 import { CommonModule } from '@angular/common';  // Add this
 import { DrinkCardComponent } from './drink-card/drink-card.component';
-import { Drink } from '../../models/drink.model';
+import { Drink } from '../../shared/models/drink.model';
 import { DrinkService } from '../../services/drink.service';
 import { SearchBoxComponent } from "../search-box/search-box.component";
 
