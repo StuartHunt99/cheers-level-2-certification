@@ -4,7 +4,6 @@ flex-direction: row;
 border: 1px solid #000;
 border-radius: 20px;
 overflow: hidden;
-background-color: #fff;
 height: 200px; 
 }
 
@@ -16,10 +15,14 @@ overflow: hidden;
 
 .card-content {
 flex: 1; 
-padding: 16px;
+margin-left: 12px;
 display: flex;
 flex-direction: column;
 justify-content: top;
+}
+
+.card-name{
+    margin: 8px !important;
 }
 
 .card-header {
